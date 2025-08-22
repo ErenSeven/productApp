@@ -35,5 +35,16 @@ namespace api.Mappers
                 CreatedAt = product.CreatedAt
             };
         }
+        public static Product ToProductCreateDto(this ProductCreateDto product)
+        {
+            return new Product
+            {
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                Stock = product.Stock
+            };
+        }
+        
     }
 }

@@ -8,6 +8,8 @@ namespace api.Interfaces
 {
     public interface IProductService
     {
-        Task<List<ProductReadDto>> GetAllProductsAsync();   
+        Task<List<ProductReadDto>> GetAllProductsAsync();
+        Task<ProductReadDto> GetProductByIdAsync(int id);     
+        Task<ProductReadDto> AddProductAsync(ProductCreateDto productCreateDto);
     }
 }

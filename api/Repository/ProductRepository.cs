@@ -18,9 +18,25 @@ namespace api.Repository
         {
             _context = context;
         }
+        public async Task<Product> GetProductByIdAsync(int id)
+        {
+            return await _context.Products.FindAsync(id);
+        }
         public async Task<List<Product>> GetAllProductsAsync()
         {
             return await _context.Products.ToListAsync();
+        }
+
+        public async Task<Product> CreateProductAsync(Product product)
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            return product;
+        }
+
+        public async Task<Product> GetProductByNameAsync(string name)
+        {
+            return await _context.Products.FirstOrDefaultAsync(p => p.Name == name);
         }
     }
 }
