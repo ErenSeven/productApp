@@ -15,7 +15,7 @@ Bu proje, katmanlı mimari (Controller - Service - Repository) kullanılarak gel
 
 Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
 - .NET 9.08 SDK
-- SQL Server (veya Docker üzerinde MSSQL)
+- SQL Server (veya Docker üzerinde MSSQL)ve SSSMS21(Gerekli değil ama veritabanı kontrolü için opsiyonel)
 - Visual Studio 2022 veya VS Code
 - Entity Framework Core CLI:
  ```bash
