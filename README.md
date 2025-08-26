@@ -48,6 +48,7 @@ cd api
 ```
 3. Migration oluştur ve veritabanını güncelle:
  ```bash
+cd ECommerce.Infrastructure
 dotnet ef database update
 ```
 4. Projeyi Çalıştır:
