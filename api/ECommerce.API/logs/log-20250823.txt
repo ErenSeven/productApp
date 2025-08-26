@@ -1,0 +1,471 @@
+2025-08-23 12:28:50.159 +03:00 [INF] User profile is available. Using 'C:\Users\erens\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-23 12:28:50.261 +03:00 [INF] Now listening on: http://localhost:5206
+2025-08-23 12:28:50.262 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-23 12:28:50.262 +03:00 [INF] Hosting environment: Development
+2025-08-23 12:28:50.262 +03:00 [INF] Content root path: C:\Users\erens\source\caseTwoApi\ECommerce.API
+2025-08-23 12:29:23.396 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 12:29:23.458 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 63.7669ms
+2025-08-23 12:29:23.498 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 12:29:23.499 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.5763ms
+2025-08-23 12:29:23.601 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 12:29:23.672 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.5936ms
+2025-08-23 12:29:38.246 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/register - application/json 80
+2025-08-23 12:29:38.252 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-23 12:29:38.271 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 12:29:38.283 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ECommerce.Application.Commands.Users.RegisterUserCommand) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 12:29:38.285 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-23 12:29:39.246 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "CreatedAt", "Email", "PasswordHash", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-23 12:29:39.268 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 12:29:39.277 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Register (ECommerce.API) in 990.892ms
+2025-08-23 12:29:39.278 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 12:29:39.283 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/register - 200 null application/json; charset=utf-8 1036.6298ms
+2025-08-23 12:29:50.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 12:29:50.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 0.7606ms
+2025-08-23 12:29:50.126 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 12:29:50.127 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4238ms
+2025-08-23 12:29:50.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 12:29:50.208 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.7876ms
+2025-08-23 12:31:41.388 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 12:31:41.388 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 0.4794ms
+2025-08-23 12:31:41.420 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 12:31:41.421 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.255ms
+2025-08-23 12:31:41.521 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 12:31:41.524 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0097ms
+2025-08-23 12:33:31.161 +03:00 [INF] Application is shutting down...
+2025-08-23 12:39:57.438 +03:00 [INF] User profile is available. Using 'C:\Users\erens\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-23 12:39:57.527 +03:00 [INF] Now listening on: http://localhost:5206
+2025-08-23 12:39:57.528 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-23 12:39:57.528 +03:00 [INF] Hosting environment: Development
+2025-08-23 12:39:57.528 +03:00 [INF] Content root path: C:\Users\erens\source\caseTwoApi\ECommerce.API
+2025-08-23 12:40:25.879 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 12:40:25.946 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 67.7757ms
+2025-08-23 12:40:26.020 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 12:40:26.021 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.6854ms
+2025-08-23 12:40:26.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 12:40:26.243 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.6137ms
+2025-08-23 12:42:45.736 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/register - application/json 82
+2025-08-23 12:42:45.741 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-23 12:42:45.758 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 12:42:45.770 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ECommerce.Application.Commands.Users.RegisterUserCommand) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 12:42:45.773 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-23 12:42:45.871 +03:00 [INF] Kullanıcı kayıt isteği alındı. Email: batur@gmail.com
+2025-08-23 12:42:46.394 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "CreatedAt", "Email", "PasswordHash", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-23 12:42:46.409 +03:00 [INF] Kullanıcı başarıyla kaydedildi. UserId: "8fce899e-2837-425f-a609-6b2b08325656", Email: batur@gmail.com
+2025-08-23 12:42:46.413 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 12:42:46.423 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Register (ECommerce.API) in 649.8276ms
+2025-08-23 12:42:46.423 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 12:42:46.429 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/register - 200 null application/json; charset=utf-8 693.0245ms
+2025-08-23 12:42:59.011 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 12:42:59.012 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 0.8636ms
+2025-08-23 12:42:59.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 12:42:59.042 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3741ms
+2025-08-23 12:42:59.123 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 12:42:59.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.1582ms
+2025-08-23 14:22:48.920 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 14:22:48.921 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 0.6932ms
+2025-08-23 14:22:48.960 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 14:22:48.960 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2405ms
+2025-08-23 14:22:49.061 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 14:22:49.064 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.9547ms
+2025-08-23 14:22:50.834 +03:00 [INF] Application is shutting down...
+2025-08-23 18:13:00.738 +03:00 [INF] User profile is available. Using 'C:\Users\erens\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-23 18:13:00.839 +03:00 [INF] Now listening on: http://localhost:5206
+2025-08-23 18:13:00.840 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-23 18:13:00.840 +03:00 [INF] Hosting environment: Development
+2025-08-23 18:13:00.841 +03:00 [INF] Content root path: C:\Users\erens\source\caseTwoApi\ECommerce.API
+2025-08-23 18:13:05.721 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 18:13:05.803 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 83.2659ms
+2025-08-23 18:13:05.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 18:13:05.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/swagger-ui.css - null null
+2025-08-23 18:13:05.877 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.2618ms
+2025-08-23 18:13:05.884 +03:00 [ERR] Beklenmeyen bir hata oluştu
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ECommerce.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\erens\source\caseTwoApi\ECommerce.API\Middleware\ExceptionMiddleware.cs:line 25
+2025-08-23 18:13:05.918 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/swagger-ui.css - 500 155175 application/json 42.609ms
+2025-08-23 18:13:05.989 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 18:13:06.056 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.2752ms
+2025-08-23 18:17:23.608 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:17:23.612 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-23 18:17:23.638 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:17:23.650 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:17:23.653 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-23 18:17:26.204 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:17:26.208 +03:00 [INF] Cache boş, ürünler veritabanından çekiliyor...
+2025-08-23 18:17:26.754 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Category", p."CreatedAt", p."Description", p."ImageUrl", p."Name", p."Price", p."Stock", p."UpdatedAt"
+FROM "Products" AS p
+2025-08-23 18:17:26.778 +03:00 [INF] Ürünler cache'e kaydedildi. Count: 0
+2025-08-23 18:17:26.783 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:17:26.787 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 3135.1394ms
+2025-08-23 18:17:26.788 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:17:26.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 3184.0743ms
+2025-08-23 18:22:25.725 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:22:25.726 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:22:25.727 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:22:25.728 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:22:25.729 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 0
+2025-08-23 18:22:25.729 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:22:25.729 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 2.3967ms
+2025-08-23 18:22:25.729 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:22:25.729 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 4.6538ms
+2025-08-23 18:24:31.631 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:24:31.633 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:24:31.633 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:24:31.637 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:24:31.637 +03:00 [INF] Cache boş, ürünler veritabanından çekiliyor...
+2025-08-23 18:24:31.690 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Category", p."CreatedAt", p."Description", p."ImageUrl", p."Name", p."Price", p."Stock", p."UpdatedAt"
+FROM "Products" AS p
+2025-08-23 18:24:31.733 +03:00 [INF] Ürünler cache'e kaydedildi. Count: 10
+2025-08-23 18:24:31.733 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:24:31.734 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 100.3855ms
+2025-08-23 18:24:31.734 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:24:31.734 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 103.0156ms
+2025-08-23 18:25:47.568 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:25:47.569 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:25:47.569 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:25:47.569 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:25:47.576 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:25:47.576 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:25:47.577 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 7.7323ms
+2025-08-23 18:25:47.577 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:25:47.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 8.6677ms
+2025-08-23 18:27:25.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:27:25.622 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:27:25.622 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:27:25.622 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:27:25.623 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:27:25.623 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:27:25.624 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.6142ms
+2025-08-23 18:27:25.624 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:27:25.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 2.4352ms
+2025-08-23 18:30:39.450 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:30:39.450 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:30:39.451 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:30:39.451 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:30:39.451 +03:00 [INF] Cache boş, ürünler veritabanından çekiliyor...
+2025-08-23 18:30:39.530 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Category", p."CreatedAt", p."Description", p."ImageUrl", p."Name", p."Price", p."Stock", p."UpdatedAt"
+FROM "Products" AS p
+2025-08-23 18:30:39.531 +03:00 [INF] Ürünler cache'e kaydedildi. Count: 10
+2025-08-23 18:30:39.531 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:30:39.531 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 80.8408ms
+2025-08-23 18:30:39.531 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:30:39.532 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 81.8371ms
+2025-08-23 18:33:16.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:33:16.790 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:33:16.791 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:33:16.791 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:33:16.792 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:33:16.792 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:33:16.792 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.2644ms
+2025-08-23 18:33:16.792 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:33:16.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 1.9485ms
+2025-08-23 18:37:51.438 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:37:51.438 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:37:51.438 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:37:51.438 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 405 0 null 0.7423ms
+2025-08-23 18:40:51.142 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/index.html - null null
+2025-08-23 18:40:51.143 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/index.html - 200 null text/html;charset=utf-8 0.7574ms
+2025-08-23 18:40:51.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/swagger-ui.css - null null
+2025-08-23 18:40:51.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-23 18:40:51.175 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1664ms
+2025-08-23 18:40:51.175 +03:00 [ERR] Beklenmeyen bir hata oluştu
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ECommerce.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+2025-08-23 18:40:51.177 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/swagger-ui.css - 500 155175 application/json 2.8178ms
+2025-08-23 18:40:51.263 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - null null
+2025-08-23 18:40:51.266 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0631ms
+2025-08-23 18:40:58.513 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:40:58.513 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:40:58.513 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:40:58.513 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 405 0 null 0.3845ms
+2025-08-23 18:41:24.259 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:41:24.260 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:41:24.260 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:41:24.260 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 405 0 null 1.2921ms
+2025-08-23 18:41:37.387 +03:00 [INF] Application is shutting down...
+2025-08-23 18:41:47.400 +03:00 [INF] User profile is available. Using 'C:\Users\erens\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-23 18:41:47.485 +03:00 [INF] Now listening on: http://localhost:5206
+2025-08-23 18:41:47.485 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-23 18:41:47.485 +03:00 [INF] Hosting environment: Development
+2025-08-23 18:41:47.485 +03:00 [INF] Content root path: C:\Users\erens\source\caseTwoApi\ECommerce.API
+2025-08-23 18:42:30.682 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:42:30.703 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-23 18:42:30.716 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:42:30.716 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:42:30.718 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 405 0 null 36.9175ms
+2025-08-23 18:42:41.249 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:42:41.251 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:42:41.251 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-08-23 18:42:41.251 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 405 0 null 2.5232ms
+2025-08-23 18:44:02.905 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:44:02.907 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:02.912 +03:00 [INF] Route matched with {action = "RegisterOptions", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterOptions() on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:44:02.914 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-23 18:44:02.965 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-08-23 18:44:02.967 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API) in 53.0772ms
+2025-08-23 18:44:02.967 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:02.968 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 200 0 null 62.8735ms
+2025-08-23 18:44:05.102 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:44:05.103 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:05.103 +03:00 [INF] Route matched with {action = "RegisterOptions", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterOptions() on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:44:05.108 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-08-23 18:44:05.108 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API) in 5.1056ms
+2025-08-23 18:44:05.108 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:05.108 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 200 0 null 6.5783ms
+2025-08-23 18:44:14.820 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:44:14.820 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:14.821 +03:00 [INF] Route matched with {action = "RegisterOptions", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterOptions() on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:44:14.824 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2025-08-23 18:44:14.824 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API) in 3.1797ms
+2025-08-23 18:44:14.824 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.RegisterOptions (ECommerce.API)'
+2025-08-23 18:44:14.824 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 200 0 null 4.3889ms
+2025-08-23 18:45:53.128 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:45:53.129 +03:00 [ERR] Beklenmeyen bir hata oluştu
+System.InvalidOperationException: Endpoint ECommerce.API.Controllers.AuthController.Register (ECommerce.API) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ECommerce.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+2025-08-23 18:45:53.146 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 500 null application/json 18.2001ms
+2025-08-23 18:45:57.139 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:45:57.140 +03:00 [ERR] Beklenmeyen bir hata oluştu
+System.InvalidOperationException: Endpoint ECommerce.API.Controllers.AuthController.Register (ECommerce.API) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ECommerce.API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context)
+2025-08-23 18:45:57.141 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 500 null application/json 2.0008ms
+2025-08-23 18:46:22.229 +03:00 [INF] Application is shutting down...
+2025-08-23 18:46:28.698 +03:00 [INF] User profile is available. Using 'C:\Users\erens\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-23 18:46:28.786 +03:00 [INF] Now listening on: http://localhost:5206
+2025-08-23 18:46:28.787 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-23 18:46:28.787 +03:00 [INF] Hosting environment: Development
+2025-08-23 18:46:28.787 +03:00 [INF] Content root path: C:\Users\erens\source\caseTwoApi\ECommerce.API
+2025-08-23 18:46:35.707 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:46:35.728 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-23 18:46:35.729 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:46:35.732 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 204 null null 25.9431ms
+2025-08-23 18:46:35.747 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/register - application/json 26
+2025-08-23 18:46:35.750 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:46:35.764 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 18:46:35.774 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ECommerce.Application.Commands.Users.RegisterUserCommand) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:46:35.776 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-08-23 18:46:35.856 +03:00 [INF] Kullanıcı kayıt isteği alındı. Email: 
+2025-08-23 18:46:36.346 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "CreatedAt", "Email", "PasswordHash", "Role", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-23 18:46:36.358 +03:00 [INF] Kullanıcı başarıyla kaydedildi. UserId: "54ce6970-7c81-4dbc-8868-b4704e55e583", Email: 
+2025-08-23 18:46:36.361 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 18:46:36.371 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Register (ECommerce.API) in 595.1574ms
+2025-08-23 18:46:36.371 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 18:46:36.376 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/register - 200 null application/json; charset=utf-8 628.6021ms
+2025-08-23 18:47:16.274 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - null null
+2025-08-23 18:47:16.275 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:47:16.275 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - 204 null null 1.2474ms
+2025-08-23 18:47:16.280 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/login - application/json 57
+2025-08-23 18:47:16.280 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:47:16.281 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:47:16.285 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerce.API.Controllers.LoginRequest) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:47:16.484 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."PasswordHash", u."Role", u."UserName"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-23 18:47:16.487 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-08-23 18:47:16.500 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Login (ECommerce.API) in 214.3184ms
+2025-08-23 18:47:16.500 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:47:16.500 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/login - 401 null application/problem+json; charset=utf-8 220.5687ms
+2025-08-23 18:47:53.826 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - null null
+2025-08-23 18:47:53.826 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:47:53.827 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/register - 204 null null 0.5514ms
+2025-08-23 18:47:53.829 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/register - application/json 57
+2025-08-23 18:47:53.829 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:47:53.831 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 18:47:53.831 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ECommerce.Application.Commands.Users.RegisterUserCommand) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:47:53.835 +03:00 [INF] Kullanıcı kayıt isteği alındı. Email: erensevenpmc@gmail.com
+2025-08-23 18:47:53.846 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "CreatedAt", "Email", "PasswordHash", "Role", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-23 18:47:53.847 +03:00 [INF] Kullanıcı başarıyla kaydedildi. UserId: "868b1def-5268-4260-891b-3593e859f285", Email: erensevenpmc@gmail.com
+2025-08-23 18:47:53.847 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 18:47:53.847 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Register (ECommerce.API) in 16.0166ms
+2025-08-23 18:47:53.847 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Register (ECommerce.API)'
+2025-08-23 18:47:53.847 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/register - 200 null application/json; charset=utf-8 18.47ms
+2025-08-23 18:48:22.007 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - null null
+2025-08-23 18:48:22.007 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:48:22.007 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - 204 null null 0.5941ms
+2025-08-23 18:48:22.010 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/login - application/json 57
+2025-08-23 18:48:22.011 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:48:22.011 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:48:22.011 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerce.API.Controllers.LoginRequest) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:48:22.018 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."PasswordHash", u."Role", u."UserName"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-23 18:48:22.038 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 18:48:22.040 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Login (ECommerce.API) in 28.776ms
+2025-08-23 18:48:22.040 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:48:22.040 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/login - 200 null application/json; charset=utf-8 29.486ms
+2025-08-23 18:48:22.106 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:48:22.110 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:48:22.112 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:48:24.221 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:48:24.225 +03:00 [INF] Cache boş, ürünler veritabanından çekiliyor...
+2025-08-23 18:48:24.238 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Category", p."CreatedAt", p."Description", p."ImageUrl", p."Name", p."Price", p."Stock", p."UpdatedAt"
+FROM "Products" AS p
+2025-08-23 18:48:24.255 +03:00 [INF] Ürünler cache'e kaydedildi. Count: 10
+2025-08-23 18:48:24.256 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:48:24.257 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 2144.8367ms
+2025-08-23 18:48:24.257 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:48:24.257 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 2151.1197ms
+2025-08-23 18:48:51.460 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - null null
+2025-08-23 18:48:51.461 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:48:51.461 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - 204 null null 0.4401ms
+2025-08-23 18:48:51.463 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/login - application/json 57
+2025-08-23 18:48:51.463 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:48:51.464 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:48:51.464 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerce.API.Controllers.LoginRequest) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:48:51.466 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."PasswordHash", u."Role", u."UserName"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-23 18:48:51.467 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 18:48:51.467 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Login (ECommerce.API) in 3.0934ms
+2025-08-23 18:48:51.467 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:48:51.467 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/login - 200 null application/json; charset=utf-8 3.8445ms
+2025-08-23 18:49:41.713 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product - null null
+2025-08-23 18:49:41.714 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:49:41.714 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:49:41.715 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:49:41.718 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:49:41.718 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:49:41.719 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 4.7783ms
+2025-08-23 18:49:41.719 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:49:41.719 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product - 200 null application/json; charset=utf-8 5.7053ms
+2025-08-23 18:50:00.764 +03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - null null
+2025-08-23 18:50:00.764 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:50:00.764 +03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5206/api/Auth/login - 204 null null 0.3889ms
+2025-08-23 18:50:00.766 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5206/api/Auth/login - application/json 57
+2025-08-23 18:50:00.766 +03:00 [INF] CORS policy execution successful.
+2025-08-23 18:50:00.766 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:50:00.766 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerce.API.Controllers.LoginRequest) on controller ECommerce.API.Controllers.AuthController (ECommerce.API).
+2025-08-23 18:50:00.768 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedAt", u."Email", u."PasswordHash", u."Role", u."UserName"
+FROM "Users" AS u
+WHERE u."Email" = @__email_0
+LIMIT 1
+2025-08-23 18:50:00.768 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-23 18:50:00.769 +03:00 [INF] Executed action ECommerce.API.Controllers.AuthController.Login (ECommerce.API) in 2.3152ms
+2025-08-23 18:50:00.769 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.AuthController.Login (ECommerce.API)'
+2025-08-23 18:50:00.769 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5206/api/Auth/login - 200 null application/json; charset=utf-8 2.7362ms
+2025-08-23 18:50:00.858 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 18:50:00.858 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:00.858 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:00.859 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:00.860 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:00.860 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:00.861 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 2.1422ms
+2025-08-23 18:50:00.861 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:00.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 2.8086ms
+2025-08-23 18:50:11.594 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=Elektronik - null null
+2025-08-23 18:50:11.594 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:11.594 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:11.594 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:11.595 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:11.595 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:11.595 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.0897ms
+2025-08-23 18:50:11.595 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:11.595 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=Elektronik - 200 null application/json; charset=utf-8 1.8545ms
+2025-08-23 18:50:17.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=K%C4%B1rtasiye - null null
+2025-08-23 18:50:17.107 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:17.107 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:17.108 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:17.108 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:17.108 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:17.108 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.0983ms
+2025-08-23 18:50:17.109 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:17.109 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=K%C4%B1rtasiye - 200 null application/json; charset=utf-8 1.7332ms
+2025-08-23 18:50:18.115 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=all - null null
+2025-08-23 18:50:18.115 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:18.115 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:18.124 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:18.125 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:18.125 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:18.126 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 10.4366ms
+2025-08-23 18:50:18.126 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:18.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=all - 200 null application/json; charset=utf-8 11.1188ms
+2025-08-23 18:50:19.110 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=Giyim - null null
+2025-08-23 18:50:19.110 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:19.110 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:19.110 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:19.111 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:19.111 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:19.111 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.0994ms
+2025-08-23 18:50:19.111 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:19.112 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=Giyim - 200 null application/json; charset=utf-8 2.4382ms
+2025-08-23 18:50:21.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=Kitap - null null
+2025-08-23 18:50:21.068 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:21.068 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:21.068 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:21.068 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:21.069 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:21.069 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.0422ms
+2025-08-23 18:50:21.069 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:21.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=Kitap - 200 null application/json; charset=utf-8 1.6114ms
+2025-08-23 18:50:21.922 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?category=Ev+ - null null
+2025-08-23 18:50:21.923 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:21.923 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 18:50:21.923 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 18:50:21.924 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 18:50:21.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 18:50:21.924 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 1.0709ms
+2025-08-23 18:50:21.924 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 18:50:21.924 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?category=Ev+ - 200 null application/json; charset=utf-8 1.6191ms
+2025-08-23 20:50:04.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 20:50:04.586 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 20:50:04.586 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 20:50:04.586 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 20:50:04.587 +03:00 [INF] Cache boş, ürünler veritabanından çekiliyor...
+2025-08-23 20:50:04.628 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Category", p."CreatedAt", p."Description", p."ImageUrl", p."Name", p."Price", p."Stock", p."UpdatedAt"
+FROM "Products" AS p
+2025-08-23 20:50:04.629 +03:00 [INF] Ürünler cache'e kaydedildi. Count: 10
+2025-08-23 20:50:04.629 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 20:50:04.629 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 43.3626ms
+2025-08-23 20:50:04.629 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 20:50:04.630 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 44.2839ms
+2025-08-23 20:52:16.978 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - null null
+2025-08-23 20:52:16.979 +03:00 [INF] Executing endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 20:52:16.979 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ECommerce.API.Controllers.ProductController (ECommerce.API).
+2025-08-23 20:52:16.979 +03:00 [INF] Tüm ürünler sorgulandı.
+2025-08-23 20:52:16.979 +03:00 [INF] Ürünler cache üzerinden getirildi. Count: 10
+2025-08-23 20:52:16.979 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ECommerce.Core.Entities.Product, ECommerce.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-23 20:52:16.979 +03:00 [INF] Executed action ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API) in 0.8516ms
+2025-08-23 20:52:16.980 +03:00 [INF] Executed endpoint 'ECommerce.API.Controllers.ProductController.GetAll (ECommerce.API)'
+2025-08-23 20:52:16.980 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5206/api/product?limit=4 - 200 null application/json; charset=utf-8 1.4341ms
+2025-08-23 21:15:43.224 +03:00 [INF] Application is shutting down...
