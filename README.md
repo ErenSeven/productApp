@@ -2,6 +2,7 @@
 Bu proje, katmanlı mimari (Controller - Service - Repository) kullanılarak geliştirilmiş bir .NET 8 Web API uygulamasıdır.
 
 ##🚀 Özellikler
+
 Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
 - Katmanlı mimari (Controller, Service, Repository)
 - Entity Framework Core ile MSSQL veritabanı
@@ -12,6 +13,7 @@ Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olma
 - Swagger UI entegrasyonu
 
 ##📦 Gereksinimler
+
 Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
 - .NET 9.08 SDK
 - SQL Server (veya Docker üzerinde MSSQL)
@@ -22,6 +24,7 @@ dotnet tool install --global dotnet-ef
 ```
 
 ##⚙️ Kurulum
+
 1. Projeyi klonla:
  ```bash
 git clone https://github.com/ErenSeven/productApp.git
@@ -42,5 +45,6 @@ dotnet ef database update
   dotnet watch run
 ```
 ##📖 Swagger UI
+
 API çalıştığında Swagger UI otomatik olarak açılır:
 👉 http://localhost:5118/swagger/index.html
