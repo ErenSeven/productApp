@@ -28,6 +28,7 @@ dotnet tool install --global dotnet-ef
  ```bash
 git clone https://github.com/ErenSeven/productApp.git
 cd productApp
+cd api
 ```
 2. appsettings.json dosyasını yapılandır:
  ```bash
@@ -47,3 +48,55 @@ dotnet ef database update
 
 API çalıştığında Swagger UI otomatik olarak açılır:
 👉 http://localhost:5118/swagger/index.html
+
+## Product Frontend (Next.js)
+Bu proje, Next.js 14 (App Router), TypeScript ve TailwindCSS kullanılarak geliştirilmiş bir frontend uygulamasıdır.
+
+## 🚀 Özellikler
+
+- Next.js 14 (App Router)
+- TypeScript
+- TailwindCSS
+- Ürün listeleme sayfası (GET /products)
+- Ürün ekleme sayfası (POST /products)
+- .env dosyası ile yapılandırma (Backend API adresi gibi)
+
+## 📦 Gereksinimler
+
+Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
+- Node.js 20+
+- pnpm (önerilen) veya npm / yarn
+
+## ⚙️ Kurulum
+
+1. Projeyi Klonla:
+ ```bash
+ git clone https://github.com/ErenSeven/productApp.git
+ cd productApp
+ cd frontend
+```
+2. Bağımlılıkları yükle:
+ ```bash
+npm install
+```
+veya
+ ```bash
+pnpm install
+```
+3. .env.local dosyasını oluştur:
+ ```bash
+API_BASE_URL=http://localhost:5081
+```
+4. geliştirme ortamında çalıştır:
+ ```bash
+ npm run dev
+```
+5. terminalde dönüş yapılan adresten uygulama arayüzüne eriş
+
+## 📖 Sayfalar
+
+Ürün Listeleme
+- Backend’den GET /products endpoint’ini çağırır ve ürünleri listeler.
+
+Ürün Ekleme
+- Form aracılığıyla ürün bilgilerini alır ve POST /products endpoint’ine gönderir.
