@@ -21,6 +21,7 @@ Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olma
 - .NET 9.08 SDK
 - PostgreSQL + PGADMIN4 
 - Visual Studio 2022 veya VS Code
+- Redis (local veya Docker ile çalıştırılabilir)
 - Entity Framework Core CLI:
  ```bash
 dotnet tool install --global dotnet-ef
