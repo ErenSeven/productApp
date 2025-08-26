@@ -33,9 +33,10 @@ cd api
 2. appsettings.json dosyasını yapılandır:
  ```bash
   "ConnectionStrings": {
-    "Data Source={sunucu bağlantisinda pc adi}\\{sunucu bağlantisinda sqlexpress adi};Initial Catalog={olusturulmus};Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+    "Data Source={Sunucu adı};Initial Catalog={olusturulmus};Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
   },
 ```
+sunucu adına ssms üzerinden oluşturduğunuz veritabanına sağ tıklayıp özelliklerinden bağlantı özellikleri ve oradan da sunucu adı kısmından ulaşabilirsiniz eğer sunucu adı localhost\SQLEXPRESS01 gibi ise \ yerine \\ yazmanız gerekmektedir
 3. Migration oluştur ve veritabanını güncelle:
  ```bash
 dotnet ef database update
