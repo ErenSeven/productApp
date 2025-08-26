@@ -109,3 +109,5 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:5206
  npm run dev
 ```
 5. terminalde dönüş yapılan adresten uygulama arayüzüne eriş
+
+6. Kullanıcı kaydı yaptıktan sonra admin ekranını görebilmek için pgadmin4 den bir kullanıcı seçip rolünü "Admin" yapın ve http://localhost:3000/admin ekranından admin korumalı ürün ekleme, güncelleme, silme işlemlerini yapıp kullanıcı ekranlarını test edin.
