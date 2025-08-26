@@ -1,0 +1,73 @@
+{
+    "cart": {
+        "title": "Your Cart",
+        "empty": "Your cart is empty.",
+        "remove": "Remove from Cart",
+        "total": "Total",
+        "clear": "Clear Cart",
+        "add": "Add to Cart",
+        "loginRequired": "You must log in to add items to the cart!",
+        "addedToCart": "Product added to cart!",
+        "addToCart": "Add to Cart"
+    },
+    "auth": {
+        "loginTitle": "Login",
+        "loginButton": "Login",
+        "registerTitle": "Register",
+        "registerButton": "Register",
+        "logoutButton": "Logout",
+        "hello": "Hello, {name}",
+        "loginFailed": "Login failed",
+        "unknownError": "Unknown error occurred",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Password"
+    },
+    "register": {
+        "title": "Register",
+        "namePlaceholder": "Name",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Password",
+        "button": "Register",
+        "registerFailed": "Registration failed",
+        "unknownError": "Unknown error occurred"
+    },
+    "product": {
+        "notFound": "Product not found.",
+        "detailsTitle": "{productName} | Product Details",
+        "category": "Category",
+        "description": "Product Description",
+        "stock": "Stock",
+        "featuredTitle": "Featured Products",
+        "featuredDescription": "Check out our most popular products and discover your favorites!",
+        "allCategories": "All Categories",
+        "sortNone": "No Sorting",
+        "sortAsc": "Price (Low to High)",
+        "sortDesc": "Price (High to Low)",
+        "filter": "Filter",
+        "titleSuffix": "Product Details",
+        "descriptionTitle": "Product Description"
+    },
+    "header": {
+        "cart": "Cart",
+        "login": "Login",
+        "logout": "Logout",
+        "hello": "Hello, {name}",
+        "register": "Register"
+    },
+    "home": {
+        "featuredProducts": "Featured Products",
+        "description": "Check out our most popular products and discover your favorites!",
+        "allCategories": "All Categories",
+        "minPrice": "Min Price",
+        "maxPrice": "Max Price",
+        "noSort": "No Sorting",
+        "priceAsc": "Price (Low to High)",
+        "priceDesc": "Price (High to Low)",
+        "filter": "Filter",
+        "noProducts": "No products found yet."
+    },
+    "productCard": {
+        "addToCart": "Add to Cart",
+        "addedToCart": "Product added to cart!"
+    }
+}

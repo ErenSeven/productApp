@@ -1,0 +1,73 @@
+{
+    "cart": {
+        "title": "Sepetiniz",
+        "empty": "Sepetiniz boş.",
+        "remove": "Sepetten Çıkar",
+        "total": "Genel Toplam",
+        "clear": "Sepeti Temizle",
+        "add": "Sepete Ekle",
+        "loginRequired": "Sepete eklemek için giriş yapmalısınız!",
+        "addedToCart": "Ürün sepete eklendi!",
+        "addToCart": "Sepete Ekle"
+    },
+    "auth": {
+        "loginTitle": "Giriş Yap",
+        "loginButton": "Giriş Yap",
+        "registerTitle": "Kayıt Ol",
+        "registerButton": "Kayıt Ol",
+        "logoutButton": "Çıkış Yap",
+        "hello": "Merhaba, {name}",
+        "loginFailed": "Giriş başarısız",
+        "unknownError": "Bilinmeyen bir hata oluştu",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Şifre"
+    },
+    "product": {
+        "notFound": "Ürün bulunamadı.",
+        "detailsTitle": "{productName} | Ürün Detayı",
+        "category": "Kategori",
+        "description": "Ürün Açıklaması",
+        "stock": "Stok",
+        "featuredTitle": "Öne Çıkan Ürünler",
+        "featuredDescription": "En popüler ürünlerimize göz atın ve favorilerinizi keşfedin!",
+        "allCategories": "Tüm Kategoriler",
+        "sortNone": "Sıralama Yok",
+        "sortAsc": "Fiyat (Artan)",
+        "sortDesc": "Fiyat (Azalan)",
+        "filter": "Filtrele",
+        "titleSuffix": "Ürün Detayı",
+        "descriptionTitle": "Ürün Açıklaması"
+    },
+    "header": {
+        "cart": "Sepet",
+        "login": "Giriş Yap",
+        "register": "Kayıt Ol",
+        "logout": "Çıkış",
+        "hello": "Merhaba, {name}"
+    },
+    "register": {
+        "title": "Kayıt Ol",
+        "namePlaceholder": "İsim",
+        "emailPlaceholder": "Email",
+        "passwordPlaceholder": "Şifre",
+        "button": "Kayıt Ol",
+        "registerFailed": "Kayıt başarısız",
+        "unknownError": "Bilinmeyen bir hata oluştu"
+    },
+    "home": {
+        "featuredProducts": "Öne Çıkan Ürünler",
+        "description": "En popüler ürünlerimize göz atın ve favorilerinizi keşfedin!",
+        "allCategories": "Tüm Kategoriler",
+        "minPrice": "Min Fiyat",
+        "maxPrice": "Max Fiyat",
+        "noSort": "Sıralama Yok",
+        "priceAsc": "Fiyat (Artan)",
+        "priceDesc": "Fiyat (Azalan)",
+        "filter": "Filtrele",
+        "noProducts": "Henüz ürün bulunamadı."
+    },
+    "productCard": {
+        "viewDetails": "Detayları Görüntüle",
+        "addToCart": "Sepete Ekle"
+    }
+}
