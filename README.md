@@ -84,7 +84,7 @@ veya
  ```bash
 pnpm install
 ```
-3. .env.local dosyasını oluştur:
+3. .env dosyasını oluştur:
  ```bash
 API_BASE_URL=http://localhost:5081
 ```
