@@ -26,7 +26,7 @@ dotnet tool install --global dotnet-ef
 
 1. Projeyi klonla:
  ```bash
-git clone https://github.com/ErenSeven/productApp.git
+git clone --branch dev/v1.0.0 --single-branch https://github.com/ErenSeven/productApp.git
 cd productApp
 cd api
 ```
@@ -71,7 +71,7 @@ Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olma
 
 1. Projeyi Klonla:
  ```bash
- git clone https://github.com/ErenSeven/productApp.git
+git clone --branch dev/v1.0.0 --single-branch https://github.com/ErenSeven/productApp.git
  cd productApp
  cd frontend
 ```
