@@ -1,9 +1,8 @@
 ## Product API
 Bu proje, katmanlı mimari (Controller - Service - Repository) kullanılarak geliştirilmiş bir .NET 8 Web API uygulamasıdır.
 
-##🚀 Özellikler
+## 🚀 Özellikler
 
-Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
 - Katmanlı mimari (Controller, Service, Repository)
 - Entity Framework Core ile MSSQL veritabanı
 - Ürün ekleme ve listeleme (CRUD)
@@ -12,7 +11,7 @@ Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olma
 - Migration yönetimi (dotnet ef migrations)
 - Swagger UI entegrasyonu
 
-##📦 Gereksinimler
+## 📦 Gereksinimler
 
 Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
 - .NET 9.08 SDK
@@ -23,7 +22,7 @@ Yeni bir bilgisayarda çalıştırmak için aşağıdaki araçların kurulu olma
 dotnet tool install --global dotnet-ef
 ```
 
-##⚙️ Kurulum
+## ⚙️ Kurulum
 
 1. Projeyi klonla:
  ```bash
@@ -44,7 +43,7 @@ dotnet ef database update
  ```bash
   dotnet watch run
 ```
-##📖 Swagger UI
+## 📖 Swagger UI
 
 API çalıştığında Swagger UI otomatik olarak açılır:
 👉 http://localhost:5118/swagger/index.html
