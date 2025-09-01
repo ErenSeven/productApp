@@ -1,0 +1,1 @@
+{"kind":"FETCH","data":{"headers":{"content-type":"application/json; charset=utf-8","date":"Mon, 01 Sep 2025 03:15:17 GMT","server":"Kestrel","transfer-encoding":"chunked"},"body":"WyJFbGVrdHJvbmlrIiwiTW9iaWx5YSIsIkvEsXJ0YXNpeWUiLCJFdiAmIFlhxZ9hbSIsIkdpeWltIiwiS2l0YXAiXQ==","status":200,"url":"http://localhost:5179/api/Products/categories"},"revalidate":60,"tags":[]}
