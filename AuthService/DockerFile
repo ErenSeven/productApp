@@ -1,0 +1,41 @@
+# -----------------------------
+# 1. Build
+# -----------------------------
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /app
+
+ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Projeleri kopyala
+COPY ./AuthService.API/AuthService.API.csproj ./AuthService.API/
+COPY ./AuthService.Application/*.csproj ./AuthService.Application/
+COPY ./AuthService.Core/*.csproj ./AuthService.Core/
+COPY ./AuthService.Infrastructure/*.csproj ./AuthService.Infrastructure/
+
+# Restore
+RUN dotnet restore ./AuthService.API/AuthService.API.csproj
+
+# Kaynakları kopyala (obj/bin dahil değil)
+COPY ./AuthService.API/. ./AuthService.API/
+COPY ./AuthService.Application/. ./AuthService.Application/
+COPY ./AuthService.Core/. ./AuthService.Core/
+COPY ./AuthService.Infrastructure/. ./AuthService.Infrastructure/
+
+# Publish
+WORKDIR /app/AuthService.API
+RUN dotnet publish -c Release -o /app/publish -v diag
+
+# -----------------------------
+# 2. Runtime
+# -----------------------------
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+WORKDIR /app
+
+COPY --from=build /app/publish .
+
+# wait-for-it.sh ekle
+COPY ./AuthService.API/appsettings.json .
+
+EXPOSE 5240
+ENTRYPOINT ["dotnet", "AuthService.API.dll"]
