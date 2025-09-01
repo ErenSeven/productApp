@@ -1,0 +1,137 @@
+version: '3.9'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 5s
+      retries: 10
+
+  authservice:
+    build:
+      context: ./AuthService
+      dockerfile: DockerFile
+    ports:
+      - "5240:8080"
+    environment:
+      - Jwt__Key=YckQtJ/JzkgsiZD/qyT08TUoGrJx3k5nDLphKf00EK3jYw8WxAl6jTZSfGaqN0ZL7i6pu8IkUDg3xTgkKuEg7g==!
+      - Jwt__Issuer=AuthService
+      - Jwt__Audience=AuthServiceClients
+      - DOTNET_ENVIRONMENT=Development
+      - RabbitMq__HostName=rabbitmq
+      - RabbitMq__UserName=guest
+      - RabbitMq__Password=guest
+      - RabbitMq__Exchange=auth_exchange
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    entrypoint: ["sh", "-c", "sleep 10 && dotnet AuthService.API.dll"]
+    restart: unless-stopped
+    volumes:
+      - dataprotection-keys:/root/.aspnet/DataProtection-Keys   # 👈 burası eklendi
+
+  productservice:
+    build:
+      context: ./ProductService
+      dockerfile: DockerFile
+    ports:
+      - "5161:8080"
+    environment:
+      - Jwt__Key=YckQtJ/JzkgsiZD/qyT08TUoGrJx3k5nDLphKf00EK3jYw8WxAl6jTZSfGaqN0ZL7i6pu8IkUDg3xTgkKuEg7g==!
+      - Jwt__Issuer=AuthService
+      - Jwt__Audience=AuthServiceClients
+      - DOTNET_ENVIRONMENT=Development   
+      - RabbitMq__HostName=rabbitmq
+      - RabbitMq__UserName=guest
+      - RabbitMq__Password=guest
+      - RabbitMq__Exchange=product_exchange
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    entrypoint: ["sh", "-c", "sleep 10 && dotnet ProductService.API.dll"]
+    restart: unless-stopped
+    volumes:
+      - dataprotection-keys:/root/.aspnet/DataProtection-Keys   # 👈 ekledik
+
+  logservice:
+    build:
+      context: ./LogService
+      dockerfile: DockerFile
+    ports:
+      - "5216:8080"
+    environment:
+      - Jwt__Key=YckQtJ/JzkgsiZD/qyT08TUoGrJx3k5nDLphKf00EK3jYw8WxAl6jTZSfGaqN0ZL7i6pu8IkUDg3xTgkKuEg7g==!
+      - Jwt__Issuer=AuthService
+      - Jwt__Audience=AuthServiceClients
+      - DOTNET_ENVIRONMENT=Development   
+      - RabbitMq__HostName=rabbitmq
+      - RabbitMq__UserName=guest
+      - RabbitMq__Password=guest
+      - RabbitMq__Exchange=log_exchange
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+    volumes:
+      - dataprotection-keys:/root/.aspnet/DataProtection-Keys   # 👈 ekledik
+
+  apigateway:
+    build:
+      context: ./ApiGateway
+      dockerfile: DockerFile
+    ports:
+      - "5179:8080"
+    depends_on:
+      - authservice
+      - productservice
+      - logservice
+    restart: unless-stopped
+
+  home:
+    build:
+      context: ./mikro-frontend/home
+      dockerfile: DockerFile
+      args:
+        BLOG_URL: http://cart:3000
+        IMAGE_DOMAINS: "picsum.photos"
+    ports:
+      - "3000:3000"
+    environment:
+      - HOME_URL=http://home:3000
+      - BLOG_URL=http://cart:3000
+      - NEXT_PUBLIC_API_BASE_URL=http://apigateway:8080
+      - IMAGE_DOMAINS=picsum.photos  
+    depends_on:
+      - apigateway
+      - cart
+    restart: unless-stopped
+
+  cart:
+    build:
+      context: ./mikro-frontend/cart
+      dockerfile: DockerFile
+      args:
+        BLOG_URL: http://home:3000
+        IMAGE_DOMAINS: "picsum.photos"
+    ports:
+      - "3001:3000"
+    environment:
+      - HOME_URL=http://home:3000
+      - BLOG_URL=http://home:3000
+      - NEXT_PUBLIC_API_BASE_URL=http://apigateway:8080
+      - IMAGE_DOMAINS=picsum.photos  
+    depends_on:
+      - apigateway
+    restart: unless-stopped
+
+volumes:
+  dataprotection-keys:   # 👈 volume tanımı
