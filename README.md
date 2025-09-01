@@ -1,6 +1,6 @@
 ## Distributed E-Commerce Full Stack Project
 
-Proje Hedefi: 12 Faktör Uygulama prensiplerine uygun, API Gateway üzerinden haberleşen, event-driven (olay güdümlü) .NET mikroservisleri (Auth, Product, Log) ile bu servisleri kullanan, birbirinden bağımsız geliştirilip deploy edilebilen mikro-frontend (Home, Cart) uygulamasını Docker üzerinde ayağa kaldırmak
+12 Faktör Uygulama prensiplerine uygun, API Gateway üzerinden haberleşen, event-driven (olay güdümlü) .NET mikroservisleri (Auth, Product, Log) ile bu servisleri kullanan, birbirinden bağımsız geliştirilip deploy edilebilen mikro-frontend (Home, Cart) uygulamasını Docker üzerinde ayağa kaldırmaya uğraştığımız bu projede 3 ayrı mikroservisle auth product logs fonksiyonelliklerini her mikroservis kendi içerisinde onion arc içerecek şekilde sağladık. Front-end kısmında da 2 farklı frontend uygulamasını ayrı ayrı deploy edilebilecek şekilde geliştirip multi-zone mimarisi kullanarak senkron hale getirdik. İletişimi custom event sayesinde yapıp aynı verilerle çakışmalarını sağladık.
 
 ## 🚀 Özellikler
 - Onion Architecture (Core - Application - Infrastructure - API)
@@ -97,7 +97,7 @@ dotnet ef database update
     "AuthDb": "Host=host.docker.internal;Port=5432;Database=AuthDb;Username=postgres;Password=1234"
   },
 ```
-8. Terminalden docker'ı ayağa kaldır(Docker desktop açık olsun)
+7. Terminalden docker'ı ayağa kaldır(Docker desktop açık olsun)
 ```bash
 docker-compose up --build
 ```
