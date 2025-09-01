@@ -1,0 +1,45 @@
+# -----------------------------
+# 1. Build
+# -----------------------------
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /app
+
+ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Projeleri kopyala
+COPY ./ProductService.API/*.csproj ./ProductService.API/
+COPY ./ProductService.Application/*.csproj ./ProductService.Application/
+COPY ./ProductService.Core/*.csproj ./ProductService.Core/
+COPY ./ProductService.Infrastructure/*.csproj ./ProductService.Infrastructure/
+
+# Restore
+RUN dotnet restore ./ProductService.API/ProductService.API.csproj
+
+# Kaynakları kopyala
+COPY ./ProductService.API/. ./ProductService.API/
+COPY ./ProductService.Application/. ./ProductService.Application/
+COPY ./ProductService.Core/. ./ProductService.Core/
+COPY ./ProductService.Infrastructure/. ./ProductService.Infrastructure/
+
+# Publish
+WORKDIR /app/ProductService.API
+RUN dotnet publish -c Release -o /app/publish
+
+# -----------------------------
+# 2. Runtime
+# -----------------------------
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+WORKDIR /app
+
+# Publish dizinini kopyala
+COPY --from=build /app/publish .
+
+# Gerekirse appsettings.json runtime için
+COPY ./ProductService.API/appsettings.json .
+
+# Portu expose et
+EXPOSE 5200
+
+# Container çalıştırılınca DLL’i başlat
+ENTRYPOINT ["dotnet", "ProductService.API.dll"]
