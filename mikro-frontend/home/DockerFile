@@ -1,0 +1,43 @@
+# -----------------------------
+# 1. Build Stage
+# -----------------------------
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Build args
+ARG BLOG_URL
+ARG IMAGE_DOMAINS
+
+# ENV olarak set et
+ENV BLOG_URL=$BLOG_URL
+ENV IMAGE_DOMAINS=$IMAGE_DOMAINS
+
+# package.json ve package-lock.json'ı kopyala ve bağımlılıkları yükle
+COPY package*.json ./
+RUN npm install
+
+# Tüm kaynak kodu kopyala
+COPY . .
+
+# Next.js production build
+RUN npm run build
+
+# -----------------------------
+# 2. Production Stage
+# -----------------------------
+FROM node:20-alpine AS runner
+
+WORKDIR /app
+
+# Build dizininden gerekli dosyaları kopyala
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package*.json ./
+
+# Production bağımlılıklarını yükle
+RUN npm install --production
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

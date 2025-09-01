@@ -1,0 +1,2 @@
+import createNextIntlPlugin from 'next-int/plugin';
+
